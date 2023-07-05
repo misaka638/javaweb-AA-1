@@ -1,0 +1,18 @@
+.main-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: calc(16.6667%);
+    width: calc(83.3333%);
+    height: 40vh;
+}
+
+.main-image img {
+    flex: 0 0 calc(16.6667%);
+    height: calc(60%);
+    margin-left: calc(16.6667% / 5);
+}
+
+.main-image img:first-child {
+    margin-left: 0; /* 第一个图片不需要左边距 */
+}
