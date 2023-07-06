@@ -22,13 +22,17 @@
         <a href="cusrule-manage.jsp">自定义规则</a>
     </div>
 
-    <a href="#">排班表统计</a>
-
+    <a href="#" onclick="toggleTabs(event, 'tab-sch')">排班表统计</a>
+    <div id="tab-sch" class="tab-content">
+        <a href="sche-cal.jsp">排班日历</a>
+        <a href="sche-dule.jsp">排班表</a>
+    </div>
     <a href="#" onclick="toggleTabs(event, 'tab-day')">日常管理</a>
     <div id="tab-day" class="tab-content">
-        <!-- Contact Tab Content -->
+        <a href="atd-manage.jsp">考勤管理</a>
+        <a href="apr-manage.jsp">审批管理</a>
     </div>
-    <a href="#">业务预测</a>
+    <a href="bus-forecast.jsp">业务预测</a>
 </div>
 <script>
     function toggleTabs(event, tabId) {

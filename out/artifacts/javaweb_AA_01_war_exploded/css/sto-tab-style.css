@@ -25,10 +25,3 @@
     background-color: #4CAF50;
     color: white;
 }
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}

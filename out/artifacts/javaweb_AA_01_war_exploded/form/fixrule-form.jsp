@@ -158,6 +158,7 @@
         }
 
         // 显示选中的选项卡内容，给选中的按钮添加 active 类
+        //
         tabContents[index].style.display = 'block';
         tabButtons[index].classList.add('active');
     }
