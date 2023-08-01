@@ -1,0 +1,12 @@
+.row {
+    background: #FFFFFF;
+}
+
+.row-bd>img {
+    width: 100%;
+}
+
+.item {
+    width: 50%;
+    text-align: left;
+}

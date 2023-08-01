@@ -1,0 +1,135 @@
+.bd-tl>h5 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999;
+}
+.bd-tl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd-tl>button {
+    width: 60px;
+    height: 30px;
+    background: #CCCCCC;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.row {
+    display: flex;
+    box-shadow: 5px 5px 10px #CCCCCC;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 0 0 20px;
+    padding: 15px 20px;
+}
+/* 
+.row:nth-child(1)>.row-bd {
+    display: flex;
+    flex-direction: column;
+}
+
+.row:nth-child(1)>.row-bd>.row-m {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+} */
+
+.row-tl {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 400;
+}
+/* 
+.row:nth-child(1)>.row-bd>.row-m>.item>img {
+    width: 30px;
+    margin: 0 15px 0 0;
+} */
+/* 
+.row:nth-child(1)>.row-bd>.row-m>.item {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.row:nth-child(1)>.row-bd>.row-m:nth-child(2)>.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.row:nth-child(1)>.row-bd>.row-m:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+}
+ */
+.row-m {
+    display: flex;
+    margin: 0 0 20px 0;
+    justify-content: space-between;
+}
+
+.item {
+    width: 305px;
+}
+
+.btn>button {
+    width: 85px;
+    height: 35px;
+    margin: 0 30px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn>button:nth-child(1) {
+    background: #FFC24A;
+}
+
+.line {
+    border-bottom: 1px solid #74AFFF;
+    width: 150px;
+    transform: translateY(-78px);
+}
+
+.row>.row-bd>.row-m>.line:nth-child(6) {
+    border-bottom: 1px solid #CCCCCC;
+
+}
+
+.process>img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.human {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person {
+    margin: 0 0 10px;
+}

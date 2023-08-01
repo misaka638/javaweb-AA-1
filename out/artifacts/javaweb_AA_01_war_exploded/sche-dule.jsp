@@ -1,86 +1,321 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>排班表</title>
+    <title>排班详情</title>
+    <!-- <link rel="stylesheet" href="css/atd-style.css"> -->
+    <link rel="stylesheet" href="css/tab-style.css">
+    <link rel="stylesheet" href="css/sto-tab-style.css">
+    <link rel="stylesheet" type="text/css" href="css/table-style.css">
+    <link rel="stylesheet" href="css/overall.css">
     <link rel="stylesheet" href="css/sche-dule-style.css">
 </head>
 <body>
-<div class="tab-container">
-    <div class="tab-nav">
-        <button class="tab-button active" onclick="changeTab(0)">日排班表</button>
-        <button class="tab-button" onclick="changeTab(1)">周排班表</button>
+<div class="title">
+    <img src="media/logo.png" alt="">
+    <h1>智能排班系统</h1>
+</div>
+<div class="main">
+    <div class="tab">
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/shouye-xianxing.png" alt="">
+                <a href="mainpage.jsp">首页</a>
+            </div>
+        </div>
+
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/rili.png" alt="">
+                <a href="#" onclick="toggleTabs(event, 'tab-reu')">排班管理</a>
+            </div>
+            <div id="tab-reu" class="tab-content">
+                <a href="fixrule-manage.jsp">固定规则</a>
+                <a href="cusrule-manage.jsp">自定义规则</a>
+            </div>
+        </div>
+
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/tiaoxingtu-xianxing.png" alt="">
+                <a href="#" onclick="toggleTabs(event, 'tab-sch')">排班统计</a>
+            </div>
+            <div id="tab-sch" class="tab-content active">
+                <a href="sche-cal.jsp">排班日历</a>
+                <a href="sche-dule.jsp" class="act">排班详情</a>
+                <a href="sche-sta.jsp">班次统计</a>
+                <a href="sche-work.jsp">工时统计</a>
+            </div>
+        </div>
+
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/tiaoxingtu-xianxing.png" alt="">
+                <a href="#" onclick="toggleTabs(event, 'tab-sna')">抢班管理</a>
+            </div>
+            <div id="tab-sna" class="tab-content">
+                <a href="snatch-enterprise.jsp">企业抢班</a>
+                <a href="snatch-employees.jsp">员工抢班</a>
+            </div>
+        </div>
+
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/ziyuan-xianxing.png" alt="">
+                <a href="#" onclick="toggleTabs(event, 'tab-day')">日常管理</a>
+            </div>
+            <div id="tab-day" class="tab-content">
+                <a href="atd-manage.jsp">考勤管理</a>
+                <a href="apr-manage.jsp">审批管理</a>
+            </div>
+        </div>
+
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/zuzhijiagoujiekou.png" alt="">
+                <a href="#" onclick="toggleTabs(event, 'tab-sto')">组织管理</a>
+            </div>
+            <div id="tab-sto" class="tab-content">
+                <a href="sto-manage.jsp">门店管理</a>
+                <a href="stf-manage.jsp">员工管理</a>
+            </div>
+        </div>
+
+        <div class="tab-lst">
+            <div class="tab-lst-tl">
+                <img src="media/navigation bar/leidatance.png" alt="">
+                <a href="bus-forecast.jsp">业务预测</a>
+            </div>
+        </div>
     </div>
-    <div class="tab-content">
-        <div class="option1">
-            <button onclick="btn_fun1()">按班次排</button>
-            <button onclick="btn_fun2()">按岗位排</button>
-            <br>
-            <div class="table-container">
-                <div class="table-sto">
-                    <table>
-                        <tr>
-                            <th>ID</th>
-                            <th>员工姓名</th>
-                            <th>工号</th>
-                            <th>岗位</th>
-                            <th>性别</th>
-                            <th>联系电话</th>
-                            <th>电子邮箱</th>
-                            <th>状态</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>张三</td>
-                            <td>张三</td>
-                            <td>2sffs</td>
-                            <td>d</td>
-                            <td>18883993</td>
-                            <td>253241414@hh.com</td>
-                            <td>营业中</td>
-                        </tr>
-                    </table>
+    <div class="bd">
+        <h5>排班表统计 > 排班详情</h5>
+        <div class="details">
+            <div class="tab1">
+                <div class="tab1-title">选择组织</div>
+                <a href="#" onclick="toggleTabs(event, 'sto-tab-hang')">杭州市门店</a>
+                <div id="sto-tab-hang" class="tab-content active">
+                    <a href="sto-manage.jsp" class="act">余杭区门店</a>
+                    <a href="stf-manage.jsp">上城区门店</a>
+                    <a href="stf-manage.jsp">西湖区门店</a>
+                </div>
+
+                <a href="#" onclick="toggleTabs(event, 'about')">广州市门店</a>
+                <div id="sto-tab-sui" class="tab-content">
+                    <!-- About Tab Content -->
+                </div>
+
+                <a href="#" onclick="toggleTabs(event, 'contact')">深圳市门店</a>
+                <div id="sto-tab-shen" class="tab-content">
+                    <!-- Contact Tab Content -->
+                </div>
+                <a href="#" onclick="toggleTabs(event, 'contact')">上海市门店</a>
+                <div id="sto-tab-lu" class="tab-content">
+                    <!-- Contact Tab Content -->
+                </div>
+                <a href="#" onclick="toggleTabs(event, 'contact')">南京市门店</a>
+                <div id="sto-tab-ning" class="tab-content">
+                    <!-- Contact Tab Content -->
+                </div>
+            </div>
+            <div class="tab-container">
+                <div class="tab-nav">
+                    <button class="tab-button active" onclick="changeTab(0)">日排班表</button>
+                    <button class="tab-button" onclick="changeTab(1)">周排班表</button>
+                </div>
+                <div class="tab-content">
+                    <div class="option1">
+                        <div class="option1-hd">
+                            <h3 class="time">2022年12月15日</h3>
+                            <div class="btn">
+                                <button onclick="btn_fun1()">按班次排</button>
+                                <button onclick="btn_fun2()">按岗位排</button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <div class="table-sto">
+                                <table>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>班次</th>
+                                        <th>工时</th>
+                                        <th>岗位</th>
+                                        <th>姓名</th>
+                                        <th>员工工号</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>早班 09:00--12:00</td>
+                                        <td>3</td>
+                                        <td>门店经理</td>
+                                        <td>王芳</td>
+                                        <td>20221215001</td>
+                                        <td>在职</td>
+                                        <td>
+                                            <button class="edit">编辑</button>
+                                            <button class="delete">删除</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>早班 09:00--12:00</td>
+                                        <td>3</td>
+                                        <td>导购</td>
+                                        <td>欧阳静</td>
+                                        <td>20221215011</td>
+                                        <td>在职</td>
+                                        <td>
+                                            <button class="edit">编辑</button>
+                                            <button class="delete">删除</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>早班 09:00--12:00</td>
+                                        <td>3</td>
+                                        <td>门店经理</td>
+                                        <td>王芳</td>
+                                        <td>20221215001</td>
+                                        <td>在职</td>
+                                        <td>
+                                            <button class="edit">编辑</button>
+                                            <button class="delete">删除</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>午班 13:00--17:00</td>
+                                        <td>4</td>
+                                        <td>导购</td>
+                                        <td>王一庭</td>
+                                        <td>20221215003</td>
+                                        <td>在职</td>
+                                        <td>
+                                            <button class="edit">编辑</button>
+                                            <button class="delete">删除</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>午班 13:00--17:00</td>
+                                        <td>4</td>
+                                        <td>导购</td>
+                                        <td>张芳菲</td>
+                                        <td>20221215004</td>
+                                        <td>离职</td>
+                                        <td>
+                                            <button class="edit">编辑</button>
+                                            <button class="delete">删除</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>晚班 18:00--21:00</td>
+                                        <td>3</td>
+                                        <td>库房管理员</td>
+                                        <td>吴御景</td>
+                                        <td>20221215012</td>
+                                        <td>在职</td>
+                                        <td>
+                                            <button class="edit">编辑</button>
+                                            <button class="delete">删除</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option2" style="display: none;">
+                        <div class="option2-hd">
+                            <h3 class="time">2022年12月15日</h3>
+                            <div class="btn-con">
+                                <button class="btn" id="btn1">按班次排</button>
+                                <button class="btn" id="btn2">按岗位排</button>
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <div id="image-container">
+                                <img id="image1" src="media/sche/sche-dule-1.png" class="active">
+                                <img id="image2" src="media/sche/sche-dule-2.png">
+                            </div>
+                        </div>
+                        <script>
+                            var btns = document.getElementsByClassName("btn");
+                            var images = document.querySelectorAll("#image-container img");
+
+                            for (var i = 0; i < btns.length; i++) {
+                                btns[i].addEventListener("click", function() {
+                                    var btnId = this.getAttribute("id");
+                                    var imageId = btnId.replace("btn", "image");
+
+                                    for (var j = 0; j < images.length; j++) {
+                                        images[j].classList.remove("active");
+                                    }
+
+                                    document.getElementById(imageId).classList.add("active");
+                                });
+                            }
+                        </script>
+                        <!-- <table class="table1">
+                            <tr>
+                                <th>周一</th>
+                                <th>周二</th>
+                                <th>周三</th>
+                                <th>周四</th>
+                                <th>周五</th>
+                                <th>周六</th>
+                                <th>周日</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="date">
+                                    </div>
+                                    <div class="content"><br>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table> -->
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="option2" style="display: none;">
-            <table class="table1">
-                <tr>
-                    <th>周一</th>
-                    <th>周二</th>
-                    <th>周三</th>
-                    <th>周四</th>
-                    <th>周五</th>
-                    <th>周六</th>
-                    <th>周日</th>
-                </tr>
-
-                <%
-                    int daysInMonth = 31; // 假设当前月份有31天
-                    int currentDay = 1; // 当前日期
-                    int dayOfWeek = 1; // 当前日期的星期几，1表示周一
-                    int rows = (daysInMonth + dayOfWeek - 2) / 7 + 1; // 计算总行数
-
-                    for (int i = 0; i < rows; i++) { %>
-                <tr>
-                    <% for (int j = 1; j <= 7; j++) { %>
-                    <td>
-                        <% if (dayOfWeek > 1 && currentDay <= daysInMonth) { %>
-                        <div class="date"><%= currentDay %>
-                        </div>
-                        <div class="content">
-                            Line 1<br>
-                        </div>
-                        <% currentDay++; %>
-                        <% } %>
-                    </td>
-                    <% dayOfWeek++; %>
-                    <% } %>
-                </tr>
-                <% } %>
-            </table>
-        </div>
     </div>
 </div>
+
+
+<script>
+    function toggleTabs(event, tabId) {
+        event.preventDefault();
+
+        var tabContent = document.getElementById(tabId);
+
+        // 先隐藏所有 tab 内容
+        var allTabContents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < allTabContents.length; i++) {
+            allTabContents[i].classList.remove("active");
+        }
+
+        tabContent.classList.toggle("active");
+    }
+</script>
+
+<script>
+    function toggleTabs(event, tabId) {
+        event.preventDefault();
+
+        var tabContent = document.getElementById(tabId);
+
+        // 先隐藏所有 tab 内容
+        var allTabContents = document.getElementsByClassName("tab-content");
+        for (var i = 0; i < allTabContents.length; i++) {
+            allTabContents[i].classList.remove("active");
+        }
+
+        tabContent.classList.toggle("active");
+    }
+</script>
+
 <script>
     // 获取选项卡按钮和选项卡内容元素
     var tabButtons = document.querySelectorAll('.tab-button');
@@ -111,7 +346,7 @@
     function btn_fun2() {
         console.log("按钮2被点击了");
     }
-
 </script>
 </body>
 </html>
+

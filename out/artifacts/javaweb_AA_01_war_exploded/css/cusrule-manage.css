@@ -1,0 +1,8 @@
+.table-nav>.btn>button {
+    width: 100px;
+    height: 35px;
+}
+
+.table-nav {
+    margin: 0 0 20px 0;
+}

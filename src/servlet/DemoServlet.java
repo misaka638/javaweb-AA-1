@@ -1,3 +1,5 @@
+package servlet;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -6,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "DemoServlet", urlPatterns = "/DemoServlet")
+@WebServlet(name = "servlet.DemoServlet", urlPatterns = "/servlet.DemoServlet")
 @MultipartConfig(
         fileSizeThreshold = 1024 * 1024 * 5, // 5MB
         maxFileSize = 1024 * 1024 * 10, // 10MB

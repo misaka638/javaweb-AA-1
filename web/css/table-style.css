@@ -1,0 +1,98 @@
+button{
+    background: #74AFFF;
+    border: navajowhite;
+    color: #FFFFFF;
+    border-radius: 5px;
+    /* padding: 6px 25px; */
+    margin: 0 10px;
+    text-align: center;
+}
+
+.table-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-container {
+    width: 100%;
+    margin: 0 0 0 15px;
+    /*border: 1px solid #CCCCCC;*/
+    padding: 0 15px;
+    color: #666666;
+}
+
+.table-sto {
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #E4E4E4;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+    color: #666666;
+    /*background: #FFFFFF;*/
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+th {
+    border: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 10px 12px;
+}
+
+td>button {
+    background: #74AFFF;
+    color: #FFFFFF;
+    border: navajowhite;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+td>button.delete {
+    background: #FFC24A;
+}
+
+button.btn_jieshu_1 {
+    background: #74AFFF;
+}
+
+button.btn_jieshu_2 {
+    background: #CCCCCC;
+}
+
+button.btn_fabu {
+    background: #74AFFF;
+}
+
+button.btn_queren {
+    background: #74AFFF;
+}
+
+button.btn_2 {
+    background: #FFC24A;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+tbody tr:nth-child(1) {
+    background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background: #FFFFFF;
+}
+
+.table-nav>button {
+    width: 80px;
+    height: 30px;
+}

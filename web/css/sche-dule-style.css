@@ -9,13 +9,101 @@
 }
 
 .tab-button {
-    padding: 10px 10px;
-    background-color: #ccc;
+    /* padding: 10px 10px; */
+    background-color: #74AFFF;
+    opacity: 0.5;
     border: none;
     cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    width: 176px;
+    height: 35px;
+    margin: 0 10px 0 0;
 }
 
 .tab-button.active {
-    background-color: #007bff;
+    background-color: #74AFFF;
+    opacity: 1;
     color: #fff;
+}
+
+.details>.tab-container>.tab-content {
+    display: block;
+    width: 100%;
+}
+
+.details>.tab-container {
+    margin: 0 0 0 10px;
+}
+
+.option1 {
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    padding: 20px 30px;
+}
+
+.option2 {
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    padding: 20px 30px;
+}
+
+.option1-hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+
+.option2-hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+
+.option1-hd>h3 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.option2-hd>h3 {
+    font-size: 11px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.btn>button {
+    width: 80px;
+    height: 25px;
+}
+
+.btn-con>button {
+    width: 80px;
+    height: 25px;
+}
+
+.btn>button:nth-child(2) {
+    background: #FFC24A;
+}
+
+.btn-con>button:nth-child(2) {
+    background: #FFC24A;
+}
+
+.table-container {
+    padding: 0;
+    margin: 0;
+}
+
+.table-container>#image-container>img {
+    width: 100%;
+}
+
+#image-container img {
+  display: none; /* 初始隐藏所有图片 */
+}
+
+#image-container img.active {
+    display: block;
 }

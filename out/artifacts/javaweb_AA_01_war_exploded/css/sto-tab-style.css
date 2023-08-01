@@ -1,12 +1,21 @@
+.tab1-title {
+    color: #666666;
+    border-bottom: 1px dashed #CCCCCC;
+    padding: 0 0 10px 0;
+}
+
 .tab1 {
-    position: fixed;
-    left: 30vh;
-    top: 0;
-    width: 15%; /* 1/6 of the page width */
-    height: 100vh; /* Full height of the viewport */
-    background-color: #f1f1f1;
+    width: 20%;
+    height: 100%; /* Full height of the viewport */
     display: flex;
     flex-direction: column;
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+    background: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    height: 1000px;
 }
 
 .tab1 a {
@@ -18,10 +27,29 @@
 }
 
 .tab1 a:hover {
-    background-color: #ddd;
+    background-color: #E4E4E4;
+    color: #FFFFFF;
 }
 
 .tab1 a.active {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #74AFFF;
+    color: #FFFFFF;
+}
+
+.tab1>a {
+    font-size: 1.2em;
+    color: #666666;
+}
+
+.tab-content>a {
+    font-size: 1em;
+    color: #666666;
+}
+
+.tab1>a::before {
+    content: "· ";
+}
+
+.tab1>.tab-content>a::before {
+    content: "· ";
 }

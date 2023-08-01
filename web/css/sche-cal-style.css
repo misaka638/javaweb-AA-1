@@ -1,4 +1,9 @@
-.table1{
-    width: 75%;
-    margin-left: 20%;
+.table-container>img {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+}
+
+.table-container {
+    background: #FFFFFF;
+    padding: 0 10px;
 }

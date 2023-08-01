@@ -1,30 +1,89 @@
 form {
-    text-align: center;
+    /* text-align: center; */
+    color: #666666;
 }
 
 label {
     display: inline-block;
-    width: 100px;
+    width: 65px;
     text-align: right;
     margin-right: 10px;
+    /* margin: 10px 0; */
+    color: #666666;
+    margin: 0 0 20px 0;
+    text-align: left;
 }
 
 input[type="text"],
 select {
-    width: 200px;
+    width: 300px;
+    height: 30px;
     padding: 5px;
     margin-bottom: 10px;
     display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
 }
 
 input[type="submit"] {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #74AFFF;
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 100px;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 0 20px 0 0;
 }
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    font-size: 13px;
+    font-weight: 400;
+    height: 740px;
+}
+
+input {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #666666;
+}
+
+input[type="radio"] {
+    margin: 0 0 0 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn>imput {
+    width: 100px;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background: #CCCCCC;
+    color: #666666;
 }

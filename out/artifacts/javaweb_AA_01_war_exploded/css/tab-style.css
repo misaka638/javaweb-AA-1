@@ -1,34 +1,75 @@
 .tab {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 16.66667%; /* 1/6 of the page width */
-    height: 100vh; /* Full height of the viewport */
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column;
+     /* 1/6 of the page width */
+     height: 100%; /* Full height of the viewport */
+     background: #FFFFFF;
+     display: flex;
+     flex-direction: column;
+     width: 15%;
+     padding: 15px;
+     font-size: 13px;
+     font-weight: 400;
+     width: 180px;
+     height: 1000px;
+     box-sizing: border-box;
 }
 
-.tab a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 
-.tab a:hover {
-    background-color: #ddd;
-}
-
-.tab a.active {
-    background-color: #4CAF50;
-    color: white;
-}
 .tab-content {
     display: none;
 }
 
 .tab-content.active {
     display: block;
+    margin: 0 0 0 10%;
+    border-radius: 10px;
+}
+
+.tab>.tab-lst>.tab-lst-tl>a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 2% 6%;
+    font-size: 1.2em;
+    color: #666666;
+}
+
+.tab-content>a {
+    text-align: left;
+    padding: 5% 10%;
+    font-size: 1.1em;
+    color: #666666;
+    display: block;
+    text-decoration: none;
+}
+
+.tab-lst-tl {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.tab-lst-tl>img {
+    height: 15%;
+}
+
+.tab-lst-tl:hover {
+    background-color: #E4E4E4;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.active>.act {
+    background-color: #74AFFF;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.active>.act>a {
+    background-color: #74AFFF;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+
+a {
+    color: #74AFFF;
 }
