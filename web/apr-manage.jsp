@@ -106,7 +106,7 @@
                             <td>张三</td>
                             <td>
                                 请假理由：生病
-                                <a href="apr-form.jsp">查看详情</a>
+                                <a href="form/apr-form.jsp">查看详情</a>
                             </td>
                             <td>2022-12-15 08:35:23</td>
                             <td>审批中</td>
@@ -121,7 +121,7 @@
                             <td>王新宇</td>
                             <td>
                                 请假理由：家中有事，请假回家
-                                <a href="apr-form.jsp">查看详情</a>
+                                <a href="form/apr-form.jsp">查看详情</a>
                             </td>
                             <td>2022-12-16 08:46:48</td>
                             <td>审批中</td>
@@ -136,7 +136,7 @@
                             <td>张三</td>
                             <td>
                                 请假理由：生病
-                                <a href="apr-form.jsp">查看详情</a>
+                                <a href="form/apr-form.jsp">查看详情</a>
                             </td>
                             <td>2022-12-15 08:35:23</td>
                             <td>审批中</td>
@@ -151,7 +151,7 @@
                             <td>吴子浩</td>
                             <td>
                                 请假理由：发烧，身体不适
-                                <a href="apr-form.jsp">查看详情</a>
+                                <a href="form/apr-form.jsp">查看详情</a>
                             </td>
                             <td>2022-12-16 10:48:20</td>
                             <td>审批中</td>
@@ -166,7 +166,7 @@
                             <td>唐媛媛</td>
                             <td>
                                 辞职原因：个人原因，不能胜任
-                                <a href="apr-form.jsp">查看详情</a>
+                                <a href="form/apr-form.jsp">查看详情</a>
                             </td>
                             <td>2022-12-16 12:46:13</td>
                             <td>审批中</td>
@@ -181,7 +181,7 @@
                             <td>刘永林</td>
                             <td>
                                 辞职原因：去外地发展
-                                <a href="apr-form.jsp">查看详情</a>
+                                <a href="form/apr-form.jsp">查看详情</a>
                             </td>
                             <td>2022-12-17 14:01:58</td>
                             <td>审批中</td>

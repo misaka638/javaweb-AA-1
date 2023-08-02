@@ -121,7 +121,7 @@
                 <div class="table-nav">
                     <input type="text" placeholder="请输入规则名称" />
                     <div class="btn">
-                        <button onclick="window.location.href='fixrule-form.jsp'">新建规则</button>
+                        <button onclick="window.location.href='form/fixrule-form.jsp'">新建规则</button>
                         <button onclick="window.location.href='sche-dule.jsp'">生成排班表</button>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                             <td>否</td>
                             <td>启用</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='fixrule-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/fixrule-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -156,7 +156,7 @@
                             <td>否</td>
                             <td>暂停</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='fixrule-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/fixrule-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -168,7 +168,7 @@
                             <td>是</td>
                             <td>启用</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='fixrule-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/fixrule-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>

@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>排班表统计</title>
+    <title>排班日历</title>
     <link rel="stylesheet" href="css/tab-style.css">
     <link rel="stylesheet" href="css/sto-tab-style.css">
     <link rel="stylesheet" href="css/sche-cal-style.css">
@@ -40,9 +40,9 @@
                 <a href="#" onclick="toggleTabs(event, 'tab-sch')">排班统计</a>
             </div>
             <div id="tab-sch" class="tab-content active">
-                <a href="sche-cal.jsp">排班日历</a>
+                <a href="sche-cal.jsp" class="act">排班日历</a>
                 <a href="sche-dule.jsp">排班详情</a>
-                <a href="sche-sta.jsp" class="act">班次统计</a>
+                <a href="sche-sta.jsp" >班次统计</a>
                 <a href="sche-work.jsp">工时统计</a>
             </div>
         </div>

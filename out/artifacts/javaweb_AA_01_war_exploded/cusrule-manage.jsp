@@ -121,7 +121,7 @@
                 <div class="table-nav">
                     <input type="text" placeholder="请输入规则名称" />
                     <div class="btn">
-                        <button onclick="window.location.href='cusrule-form.jsp'" type="button">新建规则</button>
+                        <button onclick="window.location.href='form/cusrule-form.jsp'" type="button">新建规则</button>
                         <button onclick="window.location.href='sche-dule.jsp'" type="button">生成排班表</button>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                             <td>2022-12-12 10:23:13</td>
                             <td>是</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='cusrule-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/cusrule-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -156,7 +156,7 @@
                             <td>2022-12-15 12:20:01</td>
                             <td>否</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='cusrule-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/cusrule-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -168,7 +168,7 @@
                             <td>2022-12-16 16:57:31</td>
                             <td>否</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='cusrule-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/cusrule-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>

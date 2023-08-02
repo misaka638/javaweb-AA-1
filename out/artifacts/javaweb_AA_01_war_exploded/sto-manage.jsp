@@ -120,7 +120,7 @@
             <div class="table-container">
                 <div class="table-nav">
                     <input type="text" placeholder="请输入门店名称" />
-                    <button id="myButton" onclick="window.location.href='sto-form.jsp'">新建</button>
+                    <button id="myButton" onclick="window.location.href='form/sto-form.jsp'">新建</button>
                 </div>
                 <div class="table-sto">
                     <table>
@@ -149,7 +149,7 @@
                                 <input type="checkbox">
                             </td>
                             <td>
-                                <button class="edit" onclick="window.location.href='sto-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/sto-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -166,7 +166,7 @@
                                 <input type="checkbox">
                             </td>
                             <td>
-                                <button class="edit" onclick="window.location.href='sto-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/sto-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -183,7 +183,7 @@
                                 <input type="checkbox">
                             </td>
                             <td>
-                                <button class="edit" onclick="window.location.href='sto-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/sto-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>

@@ -120,7 +120,7 @@
             <div class="table-container">
                 <div class="table-nav">
                     <input type="text" placeholder="输入员工名称" />
-                    <button id="myButton" onclick="window.location.href='stf-form.jsp'">新建</button>
+                    <button id="myButton" onclick="window.location.href='form/stf-form.jsp'">新建</button>
                 </div>
                 <div class="table-sto">
                     <table>
@@ -145,7 +145,7 @@
                             <td>1526480246@126.com</td>
                             <td>在职</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='stf-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -159,7 +159,7 @@
                             <td>1285648500@163.com</td>
                             <td>在职</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='stf-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -173,7 +173,7 @@
                             <td>1956458755@126.com</td>
                             <td>在职</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='stf-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -187,7 +187,7 @@
                             <td>1564879542@126.com</td>
                             <td>请假</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='stf-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
@@ -201,7 +201,7 @@
                             <td>1526480246@126.com</td>
                             <td>在职</td>
                             <td>
-                                <button class="edit" onclick="window.location.href='stf-form.jsp'">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>

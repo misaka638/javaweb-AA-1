@@ -3,87 +3,87 @@
 <html>
 <head>
     <title>员工抢班查看详情</title>
-    <link rel="stylesheet" href="css/tab-style.css">
-    <link rel="stylesheet" href="css/sto-tab-style.css">
-    <link rel="stylesheet" type="text/css" href="css/table-style.css">
-    <link rel="stylesheet" href="css/overall.css">
-    <link rel="stylesheet" href="css/snatch-form.css">
+    <link rel="stylesheet" href="../css/tab-style.css">
+    <link rel="stylesheet" href="../css/sto-tab-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/table-style.css">
+    <link rel="stylesheet" href="../css/overall.css">
+    <link rel="stylesheet" href="../css/snatch-form.css">
 </head>
 <body>
 <div class="title">
-    <img src="media/logo.png" alt="">
+    <img src="../media/logo.png" alt="">
     <h1>智能排班系统</h1>
 </div>
 <div class="main">
     <div class="tab">
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/shouye-xianxing.png" alt="">
-                <a href="mainpage.jsp">首页</a>
+                <img src="../media/navigation bar/shouye-xianxing.png" alt="">
+                <a href="../mainpage.jsp">首页</a>
             </div>
         </div>
 
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/rili.png" alt="">
+                <img src="../media/navigation bar/rili.png" alt="">
                 <a href="#" onclick="toggleTabs(event, 'tab-reu')">排班管理</a>
             </div>
             <div id="tab-reu" class="tab-content">
-                <a href="fixrule-manage.jsp">固定规则</a>
-                <a href="cusrule-manage.jsp">自定义规则</a>
+                <a href="../fixrule-manage.jsp">固定规则</a>
+                <a href="../cusrule-manage.jsp">自定义规则</a>
             </div>
         </div>
 
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/tiaoxingtu-xianxing.png" alt="">
+                <img src="../media/navigation bar/tiaoxingtu-xianxing.png" alt="">
                 <a href="#" onclick="toggleTabs(event, 'tab-sch')">排班统计</a>
             </div>
             <div id="tab-sch" class="tab-content">
-                <a href="sche-cal.jsp">排班日历</a>
-                <a href="sche-dule.jsp">排班详情</a>
-                <a href="sche-sta.jsp">班次统计</a>
-                <a href="sche-work.jsp">工时统计</a>
+                <a href="../sche-cal.jsp">排班日历</a>
+                <a href="../sche-dule.jsp">排班详情</a>
+                <a href="../sche-sta.jsp">班次统计</a>
+                <a href="../sche-work.jsp">工时统计</a>
             </div>
         </div>
 
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/tiaoxingtu-xianxing.png" alt="">
+                <img src="../media/navigation bar/tiaoxingtu-xianxing.png" alt="">
                 <a href="#" onclick="toggleTabs(event, 'tab-sna')">抢班管理</a>
             </div>
             <div id="tab-sna" class="tab-content active">
-                <a href="snatch-enterprise.jsp">企业抢班</a>
-                <a href="snatch-employees.jsp" class="act">员工抢班</a>
+                <a href="../snatch-enterprise.jsp">企业抢班</a>
+                <a href="../snatch-employees.jsp" class="act">员工抢班</a>
             </div>
         </div>
 
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/ziyuan-xianxing.png" alt="">
+                <img src="../media/navigation bar/ziyuan-xianxing.png" alt="">
                 <a href="#" onclick="toggleTabs(event, 'tab-day')">日常管理</a>
             </div>
             <div id="tab-day" class="tab-content">
-                <a href="atd-manage.jsp">考勤管理</a>
-                <a href="apr-manage.jsp">审批管理</a>
+                <a href="../atd-manage.jsp">考勤管理</a>
+                <a href="../apr-manage.jsp">审批管理</a>
             </div>
         </div>
 
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/zuzhijiagoujiekou.png" alt="">
+                <img src="../media/navigation bar/zuzhijiagoujiekou.png" alt="">
                 <a href="#" onclick="toggleTabs(event, 'tab-sto')">组织管理</a>
             </div>
             <div id="tab-sto" class="tab-content">
-                <a href="sto-manage.jsp">门店管理</a>
-                <a href="stf-manage.jsp">员工管理</a>
+                <a href="../sto-manage.jsp">门店管理</a>
+                <a href="../stf-manage.jsp">员工管理</a>
             </div>
         </div>
 
         <div class="tab-lst">
             <div class="tab-lst-tl">
-                <img src="media/navigation bar/leidatance.png" alt="">
-                <a href="bus-forecast.jsp">业务预测</a>
+                <img src="../media/navigation bar/leidatance.png" alt="">
+                <a href="../bus-forecast.jsp">业务预测</a>
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@
                     <div class="row-m">
                         <div class="item">
                             <div class="process">
-                                <img src="media/snatch/mark.png" alt="">
+                                <img src="../media/snatch/mark.png" alt="">
                                 <div class="name">发起抢班</div>
                             </div>
                             <div class="human">
@@ -113,7 +113,7 @@
                         <div class="line"></div>
                         <div class="item">
                             <div class="process">
-                                <img src="media/snatch/mark.png" alt="">
+                                <img src="../media/snatch/mark.png" alt="">
                                 <div class="name">抢班中</div>
                             </div>
                             <div class="human">
@@ -127,14 +127,14 @@
                         <div class="line"></div>
                         <div class="item">
                             <div class="process">
-                                <img src="media/snatch/3.png" alt="">
+                                <img src="../media/snatch/3.png" alt="">
                                 <div class="name">待确定</div>
                             </div>
                         </div>
                         <div class="line"></div>
                         <div class="item">
                             <div class="process">
-                                <img src="media/snatch/4.png" alt="">
+                                <img src="../media/snatch/4.png" alt="">
                                 <div class="name">结束抢班</div>
                             </div>
                         </div>
