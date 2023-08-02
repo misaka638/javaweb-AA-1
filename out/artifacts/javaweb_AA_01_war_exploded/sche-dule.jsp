@@ -1,4 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="database.DatabaseInteraction"%>
+<%@ page import="java.util.List" %>
+<%@ page import="model.Staff" %>
+
+<%
+    DatabaseInteraction dbInteraction = new DatabaseInteraction();
+    // 调用查询函数并获取查询结果
+
+    List<Staff> staffList = dbInteraction.queryData_staff_sto1();
+    dbInteraction.closeConnection();
+// 假设查询结果是一个 List<String[]> 类型的集合，每个 String[] 表示一行数据
+%>
 <html>
 <head>
     <title>排班详情</title>
@@ -144,19 +156,22 @@
                                         <th>状态</th>
                                         <th>操作</th>
                                     </tr>
+                                            <% for (Staff staff : staffList) { %>
                                     <tr>
-                                        <td>1</td>
-                                        <td>早班 09:00--12:00</td>
-                                        <td>3</td>
-                                        <td>门店经理</td>
-                                        <td>王芳</td>
-                                        <td>20221215001</td>
-                                        <td>在职</td>
+                                        <td><%= staff.getId()%></td>
+                                        <td><%= staff.getStr_assignedShifts()%></td>
+                                        <td><%= staff.calculateTotalWorkHours() %></td>
+                                        <td><%= staff.getPosition() %></td>
+                                        <td><%= staff.getName() %></td>
+                                        <td><%= staff.getId() %></td>
+                                        <td><%= staff.getFlag_work()%></td>
                                         <td>
-                                            <button class="edit">编辑</button>
+                                            <button class="edit" >编辑</button>
                                             <button class="delete">删除</button>
                                         </td>
                                     </tr>
+                                    <% } %>
+
                                     <tr>
                                         <td>2</td>
                                         <td>早班 09:00--12:00</td>
@@ -177,45 +192,6 @@
                                         <td>门店经理</td>
                                         <td>王芳</td>
                                         <td>20221215001</td>
-                                        <td>在职</td>
-                                        <td>
-                                            <button class="edit">编辑</button>
-                                            <button class="delete">删除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>午班 13:00--17:00</td>
-                                        <td>4</td>
-                                        <td>导购</td>
-                                        <td>王一庭</td>
-                                        <td>20221215003</td>
-                                        <td>在职</td>
-                                        <td>
-                                            <button class="edit">编辑</button>
-                                            <button class="delete">删除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>午班 13:00--17:00</td>
-                                        <td>4</td>
-                                        <td>导购</td>
-                                        <td>张芳菲</td>
-                                        <td>20221215004</td>
-                                        <td>离职</td>
-                                        <td>
-                                            <button class="edit">编辑</button>
-                                            <button class="delete">删除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>晚班 18:00--21:00</td>
-                                        <td>3</td>
-                                        <td>库房管理员</td>
-                                        <td>吴御景</td>
-                                        <td>20221215012</td>
                                         <td>在职</td>
                                         <td>
                                             <button class="edit">编辑</button>
@@ -257,25 +233,6 @@
                                 });
                             }
                         </script>
-                        <!-- <table class="table1">
-                            <tr>
-                                <th>周一</th>
-                                <th>周二</th>
-                                <th>周三</th>
-                                <th>周四</th>
-                                <th>周五</th>
-                                <th>周六</th>
-                                <th>周日</th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="date">
-                                    </div>
-                                    <div class="content"><br>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table> -->
                     </div>
                 </div>
             </div>

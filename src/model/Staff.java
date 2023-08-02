@@ -16,8 +16,17 @@ public class Staff {
     private double entileworktime;//连续工作时间
     private Map<String, Double> dailyWorkHours = new HashMap<>(); // 存储每日工作时长的数据，key为日期，value为工作时长
     private Map<String, Double> weeklyWorkHours; // 存储每周工作时长的数据，key为周数，value为工作时长
+    private String str_assignedShifts;
     private boolean flag_work = false;
 
+    public double calculateTotalWorkHours() {
+        double totalHours = 0.0;
+        for (String day : dailyWorkHours.keySet()) {
+            double hours = dailyWorkHours.get(day);
+            totalHours += hours;
+        }
+        return totalHours;
+    }
     public String toStringassignedShifts(){
         StringBuilder str = new StringBuilder();
         int len=assignedShifts.size();
@@ -26,9 +35,7 @@ public class Staff {
         }
         return str.toString();
     }
-//    public Double calWorktime(){
-//
-//    }
+
     public Staff(String id, String name, String preferences, String preferences_value, String position, String speciality) {
         this.id = id;
         this.name = name;
@@ -154,6 +161,14 @@ public class Staff {
 
     public void setFlag_work(boolean flag_work) {
         this.flag_work = flag_work;
+    }
+
+    public String getStr_assignedShifts() {
+        return str_assignedShifts;
+    }
+
+    public void setStr_assignedShifts(String str_assignedShifts) {
+        this.str_assignedShifts = str_assignedShifts;
     }
 
     public String toString_staff1() {

@@ -16,15 +16,6 @@ public class Individual_GA {
         DatabaseInteraction dbInteraction = new DatabaseInteraction();
         staffList = dbInteraction.queryData_staff_init();
         dbInteraction.closeConnection();
-
-//        // 将 List<Staff> 转换为字符串输出
-//        StringBuilder sb = new StringBuilder();
-//        sb.append("Staff List:\n");
-//        for (Staff staff : staffList) {
-//            sb.append(staff.toString_staff1()).append("\n");
-//        }
-//        String output = sb.toString();
-//        System.out.println(output);
     }
 
     public void addStaffToAssignedEmployees(List<Staff> assignedEmployees, int n) { // 随机将员工的信息输入到assignedEmployees中

@@ -67,9 +67,19 @@ public class GeneticAlgorithm {
         DatabaseInteraction dbInteraction = new DatabaseInteraction();
         List<Staff> staffList = bestPopulation.getIndividual_ga().getStaffList();
         for (int i = 0; i < 100; i++) {
-            Staff staff=staffList.get(i);
-            dbInteraction.updateData(Integer.parseInt(staff.getId()),staff.getPreferences(),
-                    staff.getPreferences_value(),staff.toStringassignedShifts(),staff.getPosition(),staff.getSpeciality());
+            Staff staff = staffList.get(i);
+
+            Random random = new Random();
+            if (random.nextDouble() < 0.6) {
+                dbInteraction.updateData(Integer.parseInt(staff.getId()), staff.getPreferences(),
+                        staff.getPreferences_value(), staff.toStringassignedShifts(), staff.getPosition(),
+                        staff.getSpeciality(),Double.toString(staff.calculateTotalWorkHours()),true);
+            }
+            else{
+                dbInteraction.updateData(Integer.parseInt(staff.getId()), staff.getPreferences(),
+                        staff.getPreferences_value(), staff.toStringassignedShifts(), staff.getPosition(),
+                        staff.getSpeciality(),Double.toString(staff.calculateTotalWorkHours()),false);
+            }
         }
 
         dbInteraction.closeConnection();

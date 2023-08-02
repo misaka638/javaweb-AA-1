@@ -124,18 +124,21 @@ public class DatabaseInteraction {
             e.printStackTrace();
         }
     }
+
     public void updateData(int id, String preferences, String preferences_value, String assignedShifts,
-                           String position, String speciality) {
+                           String position, String speciality, String dailyWorkHours, boolean flag_work) {
         try {
             String sql = "UPDATE staff SET preferences = ?, preferences_value = ?, assignedShifts = ?," +
-                    " position = ?, speciality = ? WHERE id = ?";
+                    " position = ?, speciality = ?, dailyWorkHours = ?, flag_work = ?, WHERE id = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, preferences);
             statement.setString(2, preferences_value);
             statement.setString(3, assignedShifts);
             statement.setString(4, position);
             statement.setString(5, speciality);
-            statement.setInt(6, id);
+            statement.setBoolean(6, flag_work);
+            statement.setString(7, dailyWorkHours);
+            statement.setInt(8, id);
             statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
@@ -172,6 +175,35 @@ public class DatabaseInteraction {
         return staffList;
     }
 
+    public List<Staff> queryData_staff_sto1() {
+        List<Staff> staffList = new ArrayList<>();
+
+        try {
+            String sql = "SELECT * FROM staff";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                Staff staff = new Staff();
+                staff.setId(String.format("%02d", resultSet.getInt("id")));
+                staff.setName(resultSet.getString("name"));
+                staff.setPreferences(resultSet.getString("preferences"));
+                staff.setPreferences_value(resultSet.getString("preferences_value"));
+                staff.setPosition(resultSet.getString("position"));
+                staff.setSpeciality(resultSet.getString("speciality"));
+                staff.setStr_assignedShifts(resultSet.getString("assignedShifts"));
+                staff.setFlag_work(resultSet.getBoolean("flag_work"));
+                staffList.add(staff);
+            }
+
+            resultSet.close();
+            statement.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return staffList;
+    }
 
     // 查询数据
     public void queryData() {
