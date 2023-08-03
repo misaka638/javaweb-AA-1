@@ -163,7 +163,7 @@
             <div class="row">
                 <div class="row-tl">业务预测</div>
                 <div class="row-bd">
-                    <img src="../media/apr/apr.png" alt="">
+                    <img src="../media/apr/3.png" alt="">
                 </div>
             </div>
             <div class="btn">
