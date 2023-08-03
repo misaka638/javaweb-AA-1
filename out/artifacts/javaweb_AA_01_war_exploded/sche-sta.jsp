@@ -1,5 +1,13 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="database.DatabaseInteraction"%>
+<%@ page import="java.util.List" %>
+<%@ page import="model.Staff" %>
+<%
+    DatabaseInteraction dbInteraction = new DatabaseInteraction();
+    List<Staff> staffList = dbInteraction.queryData_staff_sto1();
+    dbInteraction.closeConnection();
+%>
 <html>
 <head>
     <title>班次统计</title>
@@ -133,71 +141,25 @@
                             <th>晚班</th>
                             <th>操作</th>
                         </tr>
+                        <% for (Staff staff : staffList) { %>
                         <tr>
-                            <td>1</td>
-                            <td>张三</td>
-                            <td>20221215001</td>
-                            <td>门店经理</td>
-                            <td>9</td>
-                            <td>8</td>
-                            <td>9</td>
+                            <td><%= staff.getId()%></td>
+                            <td><%= staff.getName() %></td>
+                            <td><%= "2022013045" + staff.getId() %></td>
+                            <td><%= staff.getPosition() %></td>
+                            <%
+                                java.util.Random random = new java.util.Random();
+                                int randomNumber = random.nextInt(11); // 生成0到10的随机整数
+                            %>
+                            <td><%= randomNumber %></td>
+                            <td><%= randomNumber %></td>
+                            <td><%= randomNumber %></td>
                             <td>
-                                <button class="edit">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>李明</td>
-                            <td>20221215001</td>
-                            <td>门店经理</td>
-                            <td>9</td>
-                            <td>9</td>
-                            <td>8</td>
-                            <td>
-                                <button class="edit">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>王一庭</td>
-                            <td>20221215003</td>
-                            <td>导购</td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>10</td>
-                            <td>
-                                <button class="edit">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>张芳菲</td>
-                            <td>20221215004</td>
-                            <td>导购</td>
-                            <td>9</td>
-                            <td>9</td>
-                            <td>8</td>
-                            <td>
-                                <button class="edit">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>唐子珊</td>
-                            <td>20221215005</td>
-                            <td>收银员</td>
-                            <td>8</td>
-                            <td>8</td>
-                            <td>10</td>
-                            <td>
-                                <button class="edit">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
+                        <% } %>
                     </table>
                     <script>
                         var button = document.getElementById('myButton');

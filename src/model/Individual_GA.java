@@ -61,6 +61,10 @@ public class Individual_GA {
     }
 
     public void calculateEmployeeWorkTime() {//根据shifts计算员工的工作时间
+        for(int i=0;i<100;i++){
+            List<Double> workHoursList = new ArrayList<>(Collections.nCopies(7, 0.0));
+            staffList.get(i).setDailyWorkHours(workHoursList);
+        }
         for (int i = 0; i < 168; i++) {
             Shift shift = shifts.get(i);
             int staff_num = shift.getEmployees_num();//确定员工人数

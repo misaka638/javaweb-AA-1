@@ -92,27 +92,27 @@
                     <div class="row-tl">快捷功能</div>
                     <div class="row-bd">
                         <div class="row-bd-choose">
-                            <img src="media/mainpage/生成排班表.png" alt="" onclick="window.location.href='sche-dule.jsp'">
+                            <img src="media\mainpage\生成排班表.png" alt="" onclick="window.location.href='sche-dule.jsp'">
                             <div class="row-choose-name">生成排班表</div>
                         </div>
                         <div class="row-bd-choose">
-                            <img src="media/mainpage/生成排班日历.png" alt="" onclick="window.location.href='sche-cal.jsp'">
+                            <img src="media\mainpage\生成排班日历.png" alt="" onclick="window.location.href='sche-cal.jsp'">
                             <div class="row-choose-name">生成排班日历</div>
                         </div>
                         <div class="row-bd-choose">
-                            <img src="media/mainpage/审批管理.png" alt="" onclick="window.location.href='apr-manage.jsp'">
+                            <img src="media\mainpage\审批管理.png" alt="" onclick="window.location.href='apr-manage.jsp'">
                             <div class="row-choose-name">审批管理</div>
                         </div>
                         <div class="row-bd-choose">
-                            <img src="media/mainpage/员工信息.png" alt="" onclick="window.location.href='stf-manage.jsp'">
+                            <img src="media\mainpage\员工信息.png" alt="" onclick="window.location.href='stf-manage.jsp'">
                             <div class="row-choose-name">员工信息</div>
                         </div>
                         <div class="row-bd-choose">
-                            <img src="media/mainpage/店铺信息.png" alt="">
+                            <img src="media\mainpage\店铺信息.png" alt="">
                             <div class="row-choose-name">店铺信息</div>
                         </div>
                         <div class="row-bd-choose">
-                            <img src="media/mainpage/客流量预测.png" alt="">
+                            <img src="media\mainpage\客流量预测.png" alt="">
                             <div class="row-choose-name">客流量预测</div>
                         </div>
                     </div>
@@ -121,35 +121,35 @@
                     <div class="row-tl">员工情况</div>
                     <div class="row-bd">
                         <div class="row-bd-details">
-                            <img src="media/mainpage/员工总人数.png" alt="">
+                            <img src="media\mainpage\员工总人数.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">员工总人数</div>
                                 <div class="row-details-num">10000</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/在岗人数.png" alt="">
+                            <img src="media\mainpage\在岗人数.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">在岗人数</div>
                                 <div class="row-details-num">8000</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/休假人数.png" alt="">
+                            <img src="media\mainpage\休假人数.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">休假人数</div>
                                 <div class="row-details-num">1400</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/请假人数.png" alt="">
+                            <img src="media\mainpage\请假人数.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">请假人数</div>
                                 <div class="row-details-num">500</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/缺勤人数.png" alt="">
+                            <img src="media\mainpage\缺勤人数.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">缺勤人数</div>
                                 <div class="row-details-num">100</div>
@@ -161,28 +161,28 @@
                     <div class="row-tl">门店情况</div>
                     <div class="row-bd">
                         <div class="row-bd-details">
-                            <img src="media/mainpage/店铺总数.png" alt="">
+                            <img src="media\mainpage\店铺总数.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">店铺总数</div>
                                 <div class="row-details-num">50</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/营业中.png" alt="">
+                            <img src="media\mainpage\营业中.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">营业中</div>
                                 <div class="row-details-num">45</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/休息中.png" alt="">
+                            <img src="media\mainpage\休息中.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">休息中</div>
                                 <div class="row-details-num">3</div>
                             </div>
                         </div>
                         <div class="row-bd-details">
-                            <img src="media/mainpage/整顿中.png" alt="">
+                            <img src="media\mainpage\整顿中.png" alt="">
                             <div class="row-details-txt">
                                 <div class="row-details-name">整顿中</div>
                                 <div class="row-details-num">2</div>
@@ -191,32 +191,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row-tl">业务预测</div>
                     <div class="row-bd">
-                        <img src="media/mainpage/bus-forecast.png" alt="" class="pic-1">
+                        <img src="media\mainpage\bus-forecast.png" alt="" class="pic-1">
                     </div>
                 </div>
             </div>
             <div class="column">
                 <div class="row">
-                    <div class="row-tl">今日考勤</div>
                     <div class="row-bd">
-                        <img src="media/mainpage/today's attendance.png" alt="" class="pic-2">
+                        <img src="media\mainpage\today's attendance.png" alt="" class="pic-2">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="row-tl">审批概况</div>
                     <div class="row-bd apr">
-                        <img src="media/mainpage/apr-1.png" alt="" class="pic-3">
-                        <div class="row-bd-num">
-                            <div class="row-num">176</div>
-                            <div class="row-num-name">审批统计</div>
-                            <div class="row-num">148</div>
-                            <div class="row-num-name">已完成</div>
-                            <div class="row-num">28</div>
-                            <div class="row-num-name">审批中</div>
-                        </div>
-                        <img src="media/mainpage/apr-2.png" alt="" class="pic-4">
+                        <img src="media\mainpage\apr.png" alt="" class="pic-3">
                     </div>
                 </div>
             </div>
@@ -241,4 +229,3 @@
 </script>
 </body>
 </html>
-

@@ -70,7 +70,7 @@ public class GeneticAlgorithm {
             Staff staff = staffList.get(i);
 
             Random random = new Random();
-            if (random.nextDouble() < 0.6) {
+            if (random.nextDouble() < 0.9) {
                 dbInteraction.updateData(Integer.parseInt(staff.getId()), staff.getPreferences(),
                         staff.getPreferences_value(), staff.toStringassignedShifts(), staff.getPosition(),
                         staff.getSpeciality(),Double.toString(staff.calculateTotalWorkHours()),true);

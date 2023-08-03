@@ -1,5 +1,13 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="database.DatabaseInteraction"%>
+<%@ page import="java.util.List" %>
+<%@ page import="model.Staff" %>
+<%
+    DatabaseInteraction dbInteraction = new DatabaseInteraction();
+    List<Staff> staffList = dbInteraction.queryData_staff_sto1();
+    dbInteraction.closeConnection();
+%>
 <html>
 <head>
     <title>工时统计</title>
@@ -133,19 +141,27 @@
                             <th>月工时</th>
                             <th>操作</th>
                         </tr>
+                        <% for (Staff staff : staffList) { %>
                         <tr>
-                            <td>1</td>
-                            <td>张三</td>
-                            <td>20221215001</td>
-                            <td>门店经理</td>
-                            <td>3</td>
-                            <td>21</td>
-                            <td>86</td>
+                            <td><%= staff.getId()%></td>
+                            <td><%= staff.getName() %></td>
+                            <td><%= "2022013045" + staff.getId() %></td>
+                            <td><%= staff.getPosition() %></td>
+                            <%
+                                java.util.Random random = new java.util.Random();
+                                int randomNumber1 = random.nextInt(8); // 生成0到10的随机整数
+                                int randomNumber2=20+random.nextInt(15);
+                                int randomNumber3=80+random.nextInt(30);
+                            %>
+                            <td><%= randomNumber1 %></td>
+                            <td><%= randomNumber2 %></td>
+                            <td><%= randomNumber3 %></td>
                             <td>
-                                <button class="edit">编辑</button>
+                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
+                        <% } %>
                         <tr>
                             <td>2</td>
                             <td>李明</td>

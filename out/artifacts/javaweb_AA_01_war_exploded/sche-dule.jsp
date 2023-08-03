@@ -5,11 +5,8 @@
 
 <%
     DatabaseInteraction dbInteraction = new DatabaseInteraction();
-    // 调用查询函数并获取查询结果
-
     List<Staff> staffList = dbInteraction.queryData_staff_sto1();
     dbInteraction.closeConnection();
-// 假设查询结果是一个 List<String[]> 类型的集合，每个 String[] 表示一行数据
 %>
 <html>
 <head>
@@ -160,44 +157,23 @@
                                     <tr>
                                         <td><%= staff.getId()%></td>
                                         <td><%= staff.judge_assignedShifts()%></td>
-                                        <td><%= staff.calculateTotalWorkHours() %></td>
+                                        <td><%= staff.getEntileworktime() %></td>
                                         <td><%= staff.getPosition() %></td>
                                         <td><%= staff.getName() %></td>
-                                        <td><%= staff.getId() %></td>
-                                        <td><%= staff.getFlag_work()%></td>
+                                        <td><%= "2022013045" + staff.getId() %></td>
                                         <td>
-                                            <button class="edit" >编辑</button>
+                                            <% if (!staff.getFlag_work()) { %>
+                                            请假
+                                            <% } else { %>
+                                            在职
+                                            <% } %>
+                                        </td>
+                                        <td>
+                                            <button class="edit" onclick="btn_fun1()">编辑</button>
                                             <button class="delete">删除</button>
                                         </td>
                                     </tr>
                                     <% } %>
-
-                                    <tr>
-                                        <td>2</td>
-                                        <td>早班 09:00--12:00</td>
-                                        <td>3</td>
-                                        <td>导购</td>
-                                        <td>欧阳静</td>
-                                        <td>20221215011</td>
-                                        <td>在职</td>
-                                        <td>
-                                            <button class="edit">编辑</button>
-                                            <button class="delete">删除</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>早班 09:00--12:00</td>
-                                        <td>3</td>
-                                        <td>门店经理</td>
-                                        <td>王芳</td>
-                                        <td>20221215001</td>
-                                        <td>在职</td>
-                                        <td>
-                                            <button class="edit">编辑</button>
-                                            <button class="delete">删除</button>
-                                        </td>
-                                    </tr>
                                 </table>
                             </div>
                         </div>
@@ -297,6 +273,7 @@
     }
 
     function btn_fun1() {
+        window.location.href = "form/stf-form.jsp";
         console.log("按钮1被点击了");
     }
 

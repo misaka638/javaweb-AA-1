@@ -194,6 +194,7 @@ public class DatabaseInteraction {
                 staff.setPosition(resultSet.getString("position"));
                 staff.setSpeciality(resultSet.getString("speciality"));
                 staff.setStr_assignedShifts(resultSet.getString("assignedShifts"));
+                staff.setEntileworktime(Double.parseDouble(resultSet.getString("dailyWorkHours")));
                 staff.setFlag_work(resultSet.getBoolean("flag_work"));
                 staffList.add(staff);
             }

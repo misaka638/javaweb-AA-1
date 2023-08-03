@@ -100,8 +100,8 @@ body>h1 {
 }
 
 .row-bd>img {
-    border-radius: 10px;
-    border: 1px solid #E4E4E4;
+    /* border-radius: 10px; */
+    /* border: 1px solid #E4E4E4; */
     margin: 2% 0;
 }
 

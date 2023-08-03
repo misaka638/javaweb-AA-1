@@ -1,5 +1,13 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="database.DatabaseInteraction"%>
+<%@ page import="java.util.List" %>
+<%@ page import="model.Staff" %>
+<%
+    DatabaseInteraction dbInteraction = new DatabaseInteraction();
+    List<Staff> staffList = dbInteraction.queryData_staff_sto1();
+    dbInteraction.closeConnection();
+%>
 <html>
 <head>
     <title>员工管理</title>
@@ -101,20 +109,16 @@
 
                 <a href="#" onclick="toggleTabs(event, 'about')">广州市门店</a>
                 <div id="sto-tab-sui" class="tab-content">
-                    <!-- About Tab Content -->
                 </div>
 
                 <a href="#" onclick="toggleTabs(event, 'contact')">深圳市门店</a>
                 <div id="sto-tab-shen" class="tab-content">
-                    <!-- Contact Tab Content -->
                 </div>
                 <a href="#" onclick="toggleTabs(event, 'contact')">上海市门店</a>
                 <div id="sto-tab-lu" class="tab-content">
-                    <!-- Contact Tab Content -->
                 </div>
                 <a href="#" onclick="toggleTabs(event, 'contact')">南京市门店</a>
                 <div id="sto-tab-ning" class="tab-content">
-                    <!-- Contact Tab Content -->
                 </div>
             </div>
             <div class="table-container">
@@ -135,76 +139,34 @@
                             <th>状态</th>
                             <th>操作</th>
                         </tr>
+                        <% for (Staff staff : staffList) { %>
                         <tr>
-                            <td>1</td>
-                            <td>王芳</td>
-                            <td>20221215001</td>
-                            <td>门店经理</td>
-                            <td>女</td>
-                            <td>19818604253</td>
-                            <td>1526480246@126.com</td>
-                            <td>在职</td>
+                            <td><%= staff.getId()%></td>
+                            <td><%= staff.getName() %></td>
+                            <td><%= "2022013045" + staff.getId() %></td>
+                            <td><%= staff.getPosition() %></td>
+                            <td>
+                                <% if (Math.random() < 0.5) { %>
+                                女
+                                <% } else { %>
+                                男
+                                <% } %>
+                            </td>
+                            <td><%= "1397" + staff.getId()+"6432" %></td>
+                            <td><%= "274" + staff.getId()+"451"+ staff.getId()+"@163.com"%></td>
+                            <td>
+                                <% if (!staff.getFlag_work()) { %>
+                                请假
+                                <% } else { %>
+                                在职
+                                <% } %>
+                            </td>
                             <td>
                                 <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
                                 <button class="delete">删除</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>李明</td>
-                            <td>20221215002</td>
-                            <td>门店副经理</td>
-                            <td>男</td>
-                            <td>16542587960</td>
-                            <td>1285648500@163.com</td>
-                            <td>在职</td>
-                            <td>
-                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>王一庭</td>
-                            <td>20221215003</td>
-                            <td>导购</td>
-                            <td>男</td>
-                            <td>13624589505</td>
-                            <td>1956458755@126.com</td>
-                            <td>在职</td>
-                            <td>
-                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>张芳菲</td>
-                            <td>20221215004</td>
-                            <td>导购</td>
-                            <td>女</td>
-                            <td>13354698723</td>
-                            <td>1564879542@126.com</td>
-                            <td>请假</td>
-                            <td>
-                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>唐子珊</td>
-                            <td>20221215005</td>
-                            <td>收银员</td>
-                            <td>女</td>
-                            <td>19818604253</td>
-                            <td>1526480246@126.com</td>
-                            <td>在职</td>
-                            <td>
-                                <button class="edit" onclick="window.location.href='form/stf-form.jsp'">编辑</button>
-                                <button class="delete">删除</button>
-                            </td>
-                        </tr>
+                        <% } %>
                     </table>
 
                     <script>
