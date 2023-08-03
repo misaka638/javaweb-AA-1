@@ -142,7 +142,7 @@
                             <td>王芳</td>
                             <td>
                                 <button class="btn_queren">确认抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                         <tr>
@@ -156,7 +156,7 @@
                             <td>--</td>
                             <td>
                                 <button class="btn_fabu">发布抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                         <tr>
@@ -170,7 +170,7 @@
                             <td>--</td>
                             <td>
                                 <button class="btn_fabu">发布抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                         <tr>
@@ -184,7 +184,7 @@
                             <td>--</td>
                             <td>
                                 <button class="btn_jieshu_1">结束抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                         <tr>
@@ -198,7 +198,7 @@
                             <td>--</td>
                             <td>
                                 <button class="btn_jieshu_1">结束抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                         <tr>
@@ -212,7 +212,7 @@
                             <td>--</td>
                             <td>
                                 <button class="btn_jieshu_1">结束抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                         <tr>
@@ -226,7 +226,7 @@
                             <td>唐子珊</td>
                             <td>
                                 <button class="btn_jieshu_2">结束抢班</button>
-                                <button class="btn_2" onclick="window.location.href='snatch-enterprise-form.jsp'">查看详情</button>
+                                <button class="btn_2" onclick="window.location.href='form/snatch-enterprise-form.jsp'">查看详情</button>
                             </td>
                         </tr>
                     </table>

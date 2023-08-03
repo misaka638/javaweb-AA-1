@@ -1,9 +1,6 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Staff {
     private String id;
@@ -12,25 +9,43 @@ public class Staff {
     private String preferences_value;//偏好值具体值
     private String position;//职务
     private String speciality;//特长
-    private List<Shift> assignedShifts= new ArrayList<>();//班次安排
+    private List<Shift> assignedShifts = new ArrayList<>();//班次安排
     private double entileworktime;//连续工作时间
-    private Map<String, Double> dailyWorkHours = new HashMap<>(); // 存储每日工作时长的数据，key为日期，value为工作时长
-    private Map<String, Double> weeklyWorkHours; // 存储每周工作时长的数据，key为周数，value为工作时长
+    private List<Double> dailyWorkHours = new ArrayList<>(); // 存储每日工作时长的数据，key为日期，value为工作时长
     private String str_assignedShifts;
     private boolean flag_work = false;
 
+    public String judge_assignedShifts() {
+        if (str_assignedShifts.length() != 0) {
+            Random random = new Random();
+            int len_random = str_assignedShifts.length() / 3;//一共有len_random个排班时段
+            int i = random.nextInt(len_random);
+            String result = str_assignedShifts.substring(3 * i, 3 + i * 3);
+            int number = Integer.parseInt(result);
+            if (number % 24 < 6) {
+                return "早班";
+            } else if (number % 24 < 18) {
+                return "午班";
+            } else {
+                return "晚班";
+            }
+        }
+        return "早班";
+    }
+
     public double calculateTotalWorkHours() {
         double totalHours = 0.0;
-        for (String day : dailyWorkHours.keySet()) {
-            double hours = dailyWorkHours.get(day);
-            totalHours += hours;
+        int len = dailyWorkHours.size();
+        for (int i = 0; i < len; i++) {
+            totalHours += dailyWorkHours.get(i);
         }
         return totalHours;
     }
-    public String toStringassignedShifts(){
+
+    public String toStringassignedShifts() {
         StringBuilder str = new StringBuilder();
-        int len=assignedShifts.size();
-        for(int i=0;i<len;i++){
+        int len = assignedShifts.size();
+        for (int i = 0; i < len; i++) {
             str.append(String.format("%03d", assignedShifts.get(i).getTimeslotid()));
         }
         return str.toString();
@@ -131,28 +146,12 @@ public class Staff {
         this.entileworktime = entileworktime;
     }
 
-    public Map<String, Double> getDailyWorkHours() {
+    public List<Double> getDailyWorkHours() {
         return dailyWorkHours;
     }
 
-    public void setDailyWorkHours(Map<String, Double> dailyWorkHours) {
+    public void setDailyWorkHours(List<Double> dailyWorkHours) {
         this.dailyWorkHours = dailyWorkHours;
-    }
-
-    public void putDailyWorkHours(String str, Double dbl) {
-        this.dailyWorkHours.put(str,dbl);
-    }
-
-    public Map<String, Double> getWeeklyWorkHours() {
-        return weeklyWorkHours;
-    }
-
-    public void setWeeklyWorkHours(Map<String, Double> weeklyWorkHours) {
-        this.weeklyWorkHours = weeklyWorkHours;
-    }
-
-    public void putWeeklyWorkHours(String str, Double dbl) {
-        this.weeklyWorkHours.put(str,dbl);
     }
 
     public boolean getFlag_work() {

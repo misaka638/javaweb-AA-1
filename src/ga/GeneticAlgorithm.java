@@ -121,7 +121,7 @@ public class GeneticAlgorithm {
             Population population1 = populationList.get(idx1);
             Population population2 = populationList.get(idx2);
             if (random.nextDouble() < 0.5) {
-                System.out.println("不进行交换");
+//                System.out.println("不进行交换");
                 populationList.get(i).setIndividual_ga(population1.getIndividual_ga());
                 populationList.get(i).setPopulation_shift(population1.getPopulation_shift());
                 populationList.get(i).setPopulationFitness(population1.getPopulationFitness());
@@ -130,7 +130,7 @@ public class GeneticAlgorithm {
                 populationList.get(i + 1).setPopulation_shift(population2.getPopulation_shift());
                 populationList.get(i + 1).setPopulationFitness(population2.getPopulationFitness());
             } else {
-                System.out.println("交换一次");
+//                System.out.println("交换一次");
                 populationList.get(i + 1).setIndividual_ga(population1.getIndividual_ga());
                 populationList.get(i + 1).setPopulation_shift(population1.getPopulation_shift());
                 populationList.get(i + 1).setPopulationFitness(population1.getPopulationFitness());
@@ -147,7 +147,7 @@ public class GeneticAlgorithm {
         List<Staff> staffList = new ArrayList<>();
         for (int i = 0; i < POPULATION_SIZE; i++) {
             if (random.nextDouble() < MUTATION_RATE) {
-                System.out.println("变异一次");
+//                System.out.println("变异一次");
                 //变异操作：改变选中染色体中StaffList的员工编号，保持员工人数不变
                 Shift shift = populationList.get(i).getIndividual_ga().getShifts().get(random.nextInt(168));//从168个shift中随机算则员工
                 staffList = populationList.get(i).getIndividual_ga().getStaffList();

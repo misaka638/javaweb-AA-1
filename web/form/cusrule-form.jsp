@@ -333,8 +333,7 @@
                     <div class="option5" style="display: none;">
                         <div class="container">
                             <div class="row">
-                                <fieldset>
-                                    <legend>员工职位</legend>
+                                <%--<fieldset>--%>
                                     规定岗位选择：
                                     <input type="checkbox" name="">经理
                                     <input type="checkbox" name="">副经理
@@ -342,7 +341,7 @@
                                     <input type="checkbox" name="">收银员
                                     <input type="checkbox" name="">导购
                                     </label>
-                                </fieldset>
+                                <%--</fieldset>--%>
                             </div>
                         </div>
                     </div>

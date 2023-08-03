@@ -199,8 +199,8 @@
                 </div>
             </div>
             <div class="btn">
-                <button onclick="window.location.href='snatch-employees.jsp'">取消</button>
-                <button onclick="window.location.href='snatch-employees.jsp'">确认</button>
+                <button onclick="window.location.href='../snatch-employees.jsp'">取消</button>
+                <button onclick="window.location.href='../snatch-employees.jsp'">确认</button>
             </div>
         </div>
     </div>

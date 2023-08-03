@@ -18,52 +18,54 @@
     <session id="-1468210574">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="35" />
-          <entry key="java" value="22" />
+          <entry key="css" value="36" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="26" />
           <entry key="jpg" value="1" />
-          <entry key="jsp" value="116" />
+          <entry key="jsp" value="126" />
           <entry key="md" value="1" />
           <entry key="png" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="35" />
+          <entry key="CSS" value="36" />
+          <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="22" />
-          <entry key="JSP" value="116" />
+          <entry key="JAVA" value="26" />
+          <entry key="JSP" value="126" />
           <entry key="Markdown" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="170" />
-          <entry key="java" value="296" />
-          <entry key="jsp" value="2551" />
-          <entry key="xml" value="9" />
+          <entry key="java" value="984" />
+          <entry key="jsp" value="2634" />
+          <entry key="xml" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="170" />
-          <entry key="JAVA" value="296" />
-          <entry key="JSP" value="2551" />
-          <entry key="XML" value="9" />
+          <entry key="JAVA" value="984" />
+          <entry key="JSP" value="2634" />
+          <entry key="XML" value="45" />
         </counts>
       </usages-collector>
     </session>
@@ -73,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/database/DatabaseInteraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="140" column="36" lean-forward="true" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+            <state relative-caret-position="-1013">
+              <caret line="138" column="50" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -82,21 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/sche-dule.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="162" column="63" lean-forward="true" selection-start-line="162" selection-start-column="63" selection-end-line="162" selection-end-column="63" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/form/stf-form.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3350">
-              <caret line="134" column="90" selection-start-line="134" selection-start-column="90" selection-end-line="134" selection-end-column="90" />
+            <state relative-caret-position="754">
+              <caret line="161" column="64" selection-start-line="161" selection-start-column="64" selection-end-line="161" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -104,35 +93,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Staff.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2200">
-              <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="40" />
+            <state relative-caret-position="2175">
+              <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+              <folding>
+                <element signature="e#704#809#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ga/GeneticAlgorithm.java">
+        <entry file="file://$PROJECT_DIR$/src/model/Individual_GA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="74" column="160" selection-start-line="74" selection-start-column="160" selection-end-line="74" selection-end-column="160" />
+            <state relative-caret-position="175">
+              <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Individual_GA.java">
+        <entry file="file://$PROJECT_DIR$/src/model/Population.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="77" column="84" lean-forward="true" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="84" />
+            <state relative-caret-position="300">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ga/GeneticAlgorithm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -152,6 +144,7 @@
       <find>gender</find>
       <find>返回</find>
       <find>日历</find>
+      <find>岗位</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,11 +154,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/reu-manage.jsp" />
         <option value="$PROJECT_DIR$/web/day-manage.jsp" />
         <option value="$PROJECT_DIR$/web/ora-manage.jsp" />
         <option value="$PROJECT_DIR$/web/wo-pro.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/DemoServlet.java" />
         <option value="$PROJECT_DIR$/web/css/styletest.css" />
         <option value="$PROJECT_DIR$/web/css/tab-style.css" />
@@ -187,29 +178,33 @@
         <option value="$PROJECT_DIR$/web/bus-forecast.jsp" />
         <option value="$PROJECT_DIR$/web/sche-sta.jsp" />
         <option value="$PROJECT_DIR$/web/sche-work.jsp" />
-        <option value="$PROJECT_DIR$/web/snatch-employees.jsp" />
-        <option value="$PROJECT_DIR$/web/snatch-enterprise.jsp" />
         <option value="$PROJECT_DIR$/src/model/Shift.java" />
         <option value="$PROJECT_DIR$/web/fixrule-manage.jsp" />
         <option value="$PROJECT_DIR$/web/form/process-form.jsp" />
-        <option value="$PROJECT_DIR$/web/form/snatch-employees-form.jsp" />
-        <option value="$PROJECT_DIR$/web/form/snatch-enterprise-form.jsp" />
-        <option value="$PROJECT_DIR$/web/form/apr-form.jsp" />
         <option value="$PROJECT_DIR$/web/sche-cal.jsp" />
         <option value="$PROJECT_DIR$/web/apr-manage.jsp" />
         <option value="$PROJECT_DIR$/web/mainpage.jsp" />
         <option value="$PROJECT_DIR$/web/form/fixrule-form.jsp" />
         <option value="$PROJECT_DIR$/web/cusrule-manage.jsp" />
-        <option value="$PROJECT_DIR$/web/form/cusrule-form.jsp" />
         <option value="$PROJECT_DIR$/web/sto-manage.jsp" />
         <option value="$PROJECT_DIR$/web/form/sto-form.jsp" />
         <option value="$PROJECT_DIR$/web/form/stf-form.jsp" />
         <option value="$PROJECT_DIR$/web/stf-manage.jsp" />
-        <option value="$PROJECT_DIR$/src/model/Individual_GA.java" />
-        <option value="$PROJECT_DIR$/src/model/Staff.java" />
-        <option value="$PROJECT_DIR$/web/sche-dule.jsp" />
-        <option value="$PROJECT_DIR$/src/database/DatabaseInteraction.java" />
         <option value="$PROJECT_DIR$/src/ga/GeneticAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/model/Individual_GA.java" />
+        <option value="$PROJECT_DIR$/web/snatch-employees.jsp" />
+        <option value="$PROJECT_DIR$/web/snatch-enterprise.jsp" />
+        <option value="$PROJECT_DIR$/web/form/apr-form.jsp" />
+        <option value="$PROJECT_DIR$/web/form/snatch-employees-form.jsp" />
+        <option value="$PROJECT_DIR$/web/form/snatch-enterprise-form.jsp" />
+        <option value="$PROJECT_DIR$/src/database/DatabaseInteraction.java" />
+        <option value="$PROJECT_DIR$/web/login_first.jsp" />
+        <option value="$PROJECT_DIR$/web/login-second.jsp" />
+        <option value="$PROJECT_DIR$/web/form/cusrule-form.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/sche-dule.jsp" />
+        <option value="$PROJECT_DIR$/src/model/Staff.java" />
+        <option value="$PROJECT_DIR$/src/model/Population.java" />
       </list>
     </option>
   </component>
@@ -248,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,7 +288,32 @@
               <item name="javaweb-AA-01" type="b2602c69:ProjectViewProjectNode" />
               <item name="javaweb-AA-01" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb-AA-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb-AA-01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb-AA-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb-AA-01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb-AA-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb-AA-01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaweb-AA-01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaweb-AA-01" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javaweb-AA-01" type="b2602c69:ProjectViewProjectNode" />
@@ -305,12 +324,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1690960859317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1691040933274" />
     <property name="last_opened_file_path" value="D:/environment/apache-tomcat-9.0.70-windows-x64/apache-tomcat-9.0.70/lib/servlet-api.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -322,11 +342,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codefiles\java\javaweb-AA-01\web\media\login" />
       <recent name="D:\codefiles\java\javaweb-AA-01" />
       <recent name="D:\codefiles\java\javaweb-AA-01\src" />
       <recent name="D:\codefiles\java\javaweb-AA-01\web" />
       <recent name="D:\codefiles\java\javaweb-AA-01\web\css" />
-      <recent name="D:\codefiles\java\javaweb-AA-01\web\image\package2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,7 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat9.0.7">
+  <component name="RunManager" selected="Application.test1">
     <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test1" />
       <module name="javaweb-AA-01" />
@@ -454,28 +474,30 @@
       <workItem from="1690459576910" duration="7000" />
       <workItem from="1690460631957" duration="2007000" />
       <workItem from="1690898860508" duration="2269000" />
-      <workItem from="1690939874808" duration="12920000" />
+      <workItem from="1690939874808" duration="13429000" />
+      <workItem from="1690990876356" duration="293000" />
+      <workItem from="1691025368798" duration="7727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53297000" />
+    <option name="totallyTimeSpent" value="61826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85714287" visible="true" weight="0.16353887" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.85555553" visible="true" weight="0.16621985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" sideWeight="0.14285715" side_tool="true" visible="true" weight="0.16353887" />
+      <window_info id="Web" order="7" sideWeight="0.14444445" side_tool="true" visible="true" weight="0.16621985" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20851688" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20704846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,31 +553,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/stf-table-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/stf-tab-style.css" />
-    <entry file="file://$PROJECT_DIR$/web/css/str-form-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="19" selection-start-line="19" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/package2/2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/image-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -622,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/Population.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Shift.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -636,27 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/process-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/snatch-enterprise-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3350">
-          <caret line="137" column="45" selection-start-line="137" selection-start-column="45" selection-end-line="137" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/snatch-employees-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3225">
-          <caret line="129" column="46" lean-forward="true" selection-start-line="129" selection-start-column="46" selection-end-line="129" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -672,13 +641,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/media/navigation bar/rili.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/apr-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/apr-manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -727,20 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/snatch-employees.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5850">
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/snatch-enterprise.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6950">
-          <caret line="278" selection-start-line="278" selection-end-line="278" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/form/fixrule-form.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -769,13 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/form/cusrule-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="592" column="29" lean-forward="true" selection-start-line="592" selection-start-column="29" selection-end-line="592" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/DemoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -790,31 +731,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/Mydatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="100" column="40" lean-forward="true" selection-start-line="100" selection-start-column="8" selection-end-line="100" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/Mydatabase.java" />
     <entry file="file://$PROJECT_DIR$/web/stf-manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="144" column="55" lean-forward="true" selection-start-line="144" selection-start-column="55" selection-end-line="144" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Individual_GA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="77" column="84" lean-forward="true" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -825,35 +746,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/sche-dule.jsp">
+    <entry file="file://$PROJECT_DIR$/src/test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="162" column="63" lean-forward="true" selection-start-line="162" selection-start-column="63" selection-end-line="162" selection-end-column="63" />
+        <state relative-caret-position="53">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/process-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/snatch-enterprise.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="144" column="90" selection-start-line="144" selection-start-column="90" selection-end-line="144" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/apr-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/snatch-employees-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="202" column="57" selection-start-line="202" selection-start-column="57" selection-end-line="202" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaweb-AA-01.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login_first.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/cusrule-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="335" column="50" lean-forward="true" selection-start-line="335" selection-start-column="50" selection-end-line="335" selection-end-column="50" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/login-second.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/form/snatch-enterprise-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="203" column="75" lean-forward="true" selection-start-line="203" selection-start-column="75" selection-end-line="203" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/snatch-employees.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="219" column="68" selection-start-line="219" selection-start-column="68" selection-end-line="219" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cusrule-form-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-825" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/DatabaseInteraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="140" column="36" lean-forward="true" selection-start-line="140" selection-start-column="36" selection-end-line="140" selection-end-column="36" />
+        <state relative-caret-position="-1013">
+          <caret line="138" column="50" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/sche-dule.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="161" column="64" selection-start-line="161" selection-start-column="64" selection-end-line="161" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Staff.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="2175">
+          <caret line="154" column="5" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+          <folding>
+            <element signature="e#704#809#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ga/GeneticAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="74" column="160" selection-start-line="74" selection-start-column="160" selection-end-line="74" selection-end-column="160" />
+        <state relative-caret-position="163">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Population.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Individual_GA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
         </state>
       </provider>
     </entry>

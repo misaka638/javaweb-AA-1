@@ -14,28 +14,6 @@ public class Population {
         population_shift = new ArrayList<>();
     }
 
-    /*
-    extractShiftScheduleInfo函数的作用是
-    把每个shift类的内容存储到一个字段中
-    生成的内容即为排班表，作为染色体在遗传算法中使用
-     */
-//    public void extractShiftScheduleInfo() {
-//        for (Shift shift : individual_ga.getShifts()) {
-//            int timeslotId = shift.getTimeslotid();
-//            List<Staff> assignedEmployees = shift.getAssignedEmployees();
-//            StringBuilder str1 = new StringBuilder();
-//
-//            str1.append("TimeslotID:").append(timeslotId).append("\n");
-//            for (Staff staff : assignedEmployees) {//将一个shift内的所有员工数据读取，包括姓名，ID，
-//                str1.append("Employee:").append(staff.getName()).append(",ID:").append(staff.getId()).append("\n");
-//            }
-//            str1.append("\n");
-//            population_shift.add(str1.toString());//每个shift类的信息都存储在对应的population_shift中
-//            System.out.println("str1.toString():\n" + str1.toString());
-//        }
-//        System.out.println("population_shift:" + population_shift);
-//    }
-
     public void extractShiftScheduleInfo() {
         for (Shift shift : individual_ga.getShifts()) {
             int timeslotId = shift.getTimeslotid();
@@ -70,17 +48,11 @@ public class Population {
             } else {
                 ans -= 1;
             }
-
-            Set<Map.Entry<String, Double>> entrySet = staff.getDailyWorkHours().entrySet();
-            // 使用增强型 for 循环遍历DailyWorkHours
-            for (Map.Entry<String, Double> entry : entrySet) {
-                String name = entry.getKey();
-                Double hours = entry.getValue();
-                if (hours < 8.5) {
-                    ans += 1;
-                } else {
-                    ans -= 1;
-                }
+            int len_List1=staff.getDailyWorkHours().size();
+            for(int j=0;j<len_List1;j++){
+                double x=staff.calculateTotalWorkHours();
+                if(x<40)ans+=1;
+                else ans-=1;
             }
 
             if (staff.getPreferences().equals("工作日")) {

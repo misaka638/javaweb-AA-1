@@ -55,7 +55,7 @@
             </div>
             <div id="tab-sna" class="tab-content active">
                 <a href="../snatch-enterprise.jsp">企业抢班</a>
-                <a href="../snatch-employees.jsp" class="act">员工抢班</a>
+                <a href="../snatch-employees.jsp">员工抢班</a>
             </div>
         </div>
 
@@ -66,7 +66,7 @@
             </div>
             <div id="tab-day" class="tab-content">
                 <a href="../atd-manage.jsp">考勤管理</a>
-                <a href="../apr-manage.jsp">审批管理</a>
+                <a href="../apr-manage.jsp" class="act">审批管理</a>
             </div>
         </div>
 
@@ -160,12 +160,12 @@
                     </div>
                 </div>
             </div>
-            <%--<div class="row">--%>
-                <%--<div class="row-tl">业务预测</div>--%>
-                <%--<div class="row-bd">--%>
-                    <%--<img src="../media/apr/apr.png" alt="">--%>
-                <%--</div>--%>
-            <%--</div>--%>
+            <div class="row">
+                <div class="row-tl">业务预测</div>
+                <div class="row-bd">
+                    <img src="../media/apr/apr.png" alt="">
+                </div>
+            </div>
             <div class="btn">
                 <button onclick="window.location.href='../apr-manage.jsp'">同意</button>
                 <button onclick="window.location.href='../apr-manage.jsp'">拒绝</button>

@@ -129,15 +129,17 @@ public class DatabaseInteraction {
                            String position, String speciality, String dailyWorkHours, boolean flag_work) {
         try {
             String sql = "UPDATE staff SET preferences = ?, preferences_value = ?, assignedShifts = ?," +
-                    " position = ?, speciality = ?, dailyWorkHours = ?, flag_work = ?, WHERE id = ?";
+                    " position = ?, speciality = ?, dailyWorkHours = ?, flag_work = ? WHERE id = ?";
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, preferences);
             statement.setString(2, preferences_value);
             statement.setString(3, assignedShifts);
             statement.setString(4, position);
             statement.setString(5, speciality);
-            statement.setBoolean(6, flag_work);
-            statement.setString(7, dailyWorkHours);
+            statement.setString(6, dailyWorkHours);
+            int f1 = 0;
+            if (flag_work) f1 = 1;
+            statement.setInt(7, f1);
             statement.setInt(8, id);
             statement.executeUpdate();
             statement.close();

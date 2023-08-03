@@ -75,12 +75,15 @@ public class Individual_GA {
                 entileworktime += 0.5;
                 assignedEmployees.get(j).setEntileworktime(entileworktime);
 
-                String formattedTimeslotId = String.format("%01d", (i / 24) % 7 + 1);//确定周几
-//                double dailyworktime = assignedEmployees.get(j).getDailyWorkHours().get(formattedTimeslotId);
-                double dailyworktime = (assignedEmployees.get(j).getDailyWorkHours() != null) ? assignedEmployees.
-                        get(j).getDailyWorkHours().getOrDefault(formattedTimeslotId, 0.0) : 0.0;
-                dailyworktime += 0.5;
-                assignedEmployees.get(j).putDailyWorkHours(formattedTimeslotId, dailyworktime);//使用新的工作时间覆盖旧值
+                int time = (i / 24) % 7;//确定周几
+                if(assignedEmployees.get(j).getDailyWorkHours().size()<time+1){
+                    assignedEmployees.get(j).getDailyWorkHours().add(0.5);
+                }
+                else{
+                    double num=assignedEmployees.get(j).getDailyWorkHours().get(time);
+                    num+=0.5;
+                    assignedEmployees.get(j).getDailyWorkHours().set(time,num);
+                }
             }
             int len_staffList = staffList.size();
             for (int j = 0; j < len_staffList; j++) {//设置其他员工flag为0，并且清空他们的entileworktime

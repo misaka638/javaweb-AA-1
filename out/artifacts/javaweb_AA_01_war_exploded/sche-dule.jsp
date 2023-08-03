@@ -159,7 +159,7 @@
                                             <% for (Staff staff : staffList) { %>
                                     <tr>
                                         <td><%= staff.getId()%></td>
-                                        <td><%= staff.getStr_assignedShifts()%></td>
+                                        <td><%= staff.judge_assignedShifts()%></td>
                                         <td><%= staff.calculateTotalWorkHours() %></td>
                                         <td><%= staff.getPosition() %></td>
                                         <td><%= staff.getName() %></td>
